@@ -21,7 +21,7 @@ async def on_ready():
 
 @tasks.loop(seconds=5)
 async def change_status():
-    await client.change_presence(activity=discord.Game(next(status)))
+    await client.change_presence(activity=discord.Game(next("with hypes")))
 
 
 ####################################################################
